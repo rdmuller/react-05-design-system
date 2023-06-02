@@ -1,7 +1,27 @@
-import { colors } from "@ignite-ui/tokens";
+import React from "react";
+import * as styles from "./styles/MyButton.css";
+import { ButtonCss } from "./ButtonCss";
 
-export function App() {
-	return (
-		<h1 style={{color: colors.ignite300}}>Hello word!!</h1>
-	);
+/*interface ButtonProps {
+	text: string;
 }
+
+export function Button ({ text = "Teste" }:ButtonProps) {
+	return (
+		<button className={styles.button}>{text}</button>
+	);
+}*/
+
+interface ButtonProps {
+	children?: React.ReactNode
+}
+
+const MyButton: React.FC<ButtonProps> = ({ 
+	children
+}) => {
+	return (
+		<button className={styles.myButton}>{children}</button>
+	);
+};
+
+export { MyButton, ButtonCss };

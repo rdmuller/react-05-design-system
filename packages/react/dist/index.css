@@ -1,0 +1,70 @@
+/* vanilla-extract-css-ns:src/styles/index.css.ts.vanilla.css?source=#H4sIAAAAAAAACnXUyZKbMBAG4HueQlWp3IILiZ2cPI5dOSeHHF0sYokBOQhn7Enl3dMyNmpAYx3/D5Dk7t7I4dZweRwq3vJdk0h5PFJ5urS9sMnfD4RYViYa0UvrtaoHPoU0Jh8Ph8MXLNImyU6TYCBs256Jsk9u1LYn44DZU1j+ijHEXGDbaBu9sBVzEfOABbtgF25XzEPMB+bZsKIV8xELgDkMVrhiAWIhMBbB2q9YiFikmA3LXbEIsQQYZbDmrC47uHwHwfR+uy9OsDdAfNrsDsPAOxggPkiuIPUOrmOAeI/8/kYW0a8jLEQ3SCvnRXJphkkVMfkuUjGIz0QmnbQk7+sCP5CJXJdTGZNWdEKek4xr9KN+49K6XnVNVjGxNz7zet6umFa1UoEJyXZCvxQKjarNJ3WKCTWIppxEA2JDzVtqJtUqZUQMqU4pE3IREjFhBuIhcgZi/pqP1O+YOAYSINLHxDWQEBEJxLjnCKEhJv6M/OR1WUEV9Ly8NEk/wQu87Tk0sGt5Xl/0n/cnJp6JpaLR/91rTIInauqOf3sgWYl+4PqbV7h15n16B07sBsy1DSxNpK7kN1C+SQ1Jo++D2sDCJ+uTvK6t81XHMF7p+YpTVN4URqs7T1FdUxiq/jxF9UxhlobzFNUy9dTu53FxwfuG4Rmp39PcO9aiGgSqrVDpjYBpECqwzB2dR4vmHYGrQYJbckw9naaLRhuBr0E277ExD3Seq3z1/VADjvvvcX49HWmhem/5OEUXUOK2e8RofxVuucftodfDbFvdDYphqlF7eXh0eWqe+cuzoedhmrHx+X//AVwjxREbCAAA */
+.styles_themeClass__1skumro0 {
+  --colors-white__1skumro1: #FFF;
+  --colors-black__1skumro2: #000;
+  --colors-gray100__1skumro3: #E1E1E6;
+  --colors-gray200__1skumro4: #A9A9B2;
+  --colors-gray400__1skumro5: #7C7C8A;
+  --colors-gray500__1skumro6: #505059;
+  --colors-gray600__1skumro7: #323238;
+  --colors-gray700__1skumro8: #29292E;
+  --colors-gray800__1skumro9: #202024;
+  --colors-gray900__1skumroa: #121214;
+  --colors-ignite300__1skumrob: #00B37E;
+  --colors-ignite500__1skumroc: #00875F;
+  --colors-ignite700__1skumrod: #015F43;
+  --colors-ignite900__1skumroe: #00291D;
+  --fonts-default__1skumrof: Roboto, sans-serif;
+  --fonts-code__1skumrog: monospace;
+  --fontSizes-xxs__1skumroh: 0.625rem;
+  --fontSizes-xs__1skumroi: 0.75rem;
+  --fontSizes-sm__1skumroj: 0.875rem;
+  --fontSizes-md__1skumrok: 1rem;
+  --fontSizes-lg__1skumrol: 1.125rem;
+  --fontSizes-xl__1skumrom: 1.25rem;
+  --fontSizes-2xl__1skumron: 1.5rem;
+  --fontSizes-4xl__1skumroo: 2rem;
+  --fontSizes-5xl__1skumrop: 2.25rem;
+  --fontSizes-6xl__1skumroq: 3rem;
+  --fontSizes-7xl__1skumror: 4rem;
+  --fontSizes-8xl__1skumros: 4.5rem;
+  --fontSizes-9xl__1skumrot: 6rem;
+  --fontWeights-regular__1skumrou: 400;
+  --fontWeights-medium__1skumrov: 500;
+  --fontWeights-bold__1skumrow: 700;
+  --lineHeights-shorter__1skumrox: 125%;
+  --lineHeights-short__1skumroy: 140%;
+  --lineHeights-base__1skumroz: 160%;
+  --lineHeights-tall__1skumro10: 180%;
+  --radii-px__1skumro11: 1px;
+  --radii-xs__1skumro12: 4px;
+  --radii-sm__1skumro13: 6px;
+  --radii-md__1skumro14: 8px;
+  --radii-lg__1skumro15: 16px;
+  --radii-full__1skumro16: 99999px;
+  --space-1__1skumro17: 0.25rem;
+  --space-2__1skumro18: 0.5rem;
+  --space-3__1skumro19: 0.75rem;
+  --space-4__1skumro1a: 1rem;
+  --space-5__1skumro1b: 1.25rem;
+  --space-6__1skumro1c: 1.5rem;
+  --space-7__1skumro1d: 1.75rem;
+  --space-8__1skumro1e: 2rem;
+  --space-10__1skumro1f: 2.5rem;
+  --space-12__1skumro1g: 3rem;
+  --space-16__1skumro1h: 4rem;
+  --space-20__1skumro1i: 5rem;
+  --space-40__1skumro1j: 10rem;
+  --space-64__1skumro1k: 16rem;
+  --space-80__1skumro1l: 20rem;
+}
+
+/* vanilla-extract-css-ns:src/styles/MyButton.css.ts.vanilla.css?source=Lk15QnV0dG9uX215QnV0dG9uX18xeTB5enRkMCB7CiAgZm9udC1mYW1pbHk6IHZhcigtLWZvbnRzLWRlZmF1bHRfXzFza3Vtcm9mKTsKICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1jb2xvcnMtZ3JheTkwMF9fMXNrdW1yb2EpOwogIGJvcmRlci1yYWRpdXM6IHZhcigtLXJhZGlpLW1kX18xc2t1bXJvMTQpOwogIHBhZGRpbmc6IHZhcigtLXNwYWNlLTRfXzFza3Vtcm8xYSk7CiAgY29sb3I6IGJsdWU7CiAgZm9udC1zaXplOiA1cmVtOwp9 */
+.MyButton_myButton__1y0yztd0 {
+  font-family: var(--fonts-default__1skumrof);
+  background-color: var(--colors-gray900__1skumroa);
+  border-radius: var(--radii-md__1skumro14);
+  padding: var(--space-4__1skumro1a);
+  color: blue;
+  font-size: 5rem;
+}

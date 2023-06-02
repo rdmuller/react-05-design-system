@@ -20,34 +20,36 @@ var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: tru
 // src/index.tsx
 var src_exports = {};
 __export(src_exports, {
-  App: () => App
+  ButtonCss: () => ButtonCss,
+  MyButton: () => MyButton
 });
 module.exports = __toCommonJS(src_exports);
 
-// ../tokens/dist/index.mjs
-var colors = {
-  white: "#FFF",
-  black: "#000",
-  gray100: "#E1E1E6",
-  gray200: "#A9A9B2",
-  gray400: "#7C7C8A",
-  gray500: "#505059",
-  gray600: "#323238",
-  gray700: "#29292E",
-  gray800: "#202024",
-  gray900: "#121214",
-  ignite300: "#00B37E",
-  ignite500: "#00875F",
-  ignite700: "#015F43",
-  ignite900: "#00291D"
-};
+// src/styles/MyButton.css.ts
+var myButton = "MyButton_myButton__1y0yztd0";
+
+// src/ButtonCss.tsx
+var import_jsx_runtime = require("react/jsx-runtime");
+function ButtonCss({ children }) {
+  const buttonStyle = {
+    borderRadius: "8px",
+    padding: "2rem",
+    backgroundColor: "blue",
+    color: "white",
+    border: 0
+  };
+  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { style: buttonStyle, children });
+}
 
 // src/index.tsx
-var import_jsx_runtime = require("react/jsx-runtime");
-function App() {
-  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h1", { style: { color: colors.ignite300 }, children: "Hello word!!" });
-}
+var import_jsx_runtime2 = require("react/jsx-runtime");
+var MyButton = ({
+  children
+}) => {
+  return /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("button", { className: myButton, children });
+};
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
-  App
+  ButtonCss,
+  MyButton
 });

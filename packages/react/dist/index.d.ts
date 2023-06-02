@@ -1,5 +1,14 @@
+import React from 'react';
 import * as react_jsx_runtime from 'react/jsx-runtime';
 
-declare function App(): react_jsx_runtime.JSX.Element;
+interface ButtonCssProps {
+    children?: React.ReactNode;
+}
+declare function ButtonCss({ children }: ButtonCssProps): react_jsx_runtime.JSX.Element;
 
-export { App };
+interface ButtonProps {
+    children?: React.ReactNode;
+}
+declare const MyButton: React.FC<ButtonProps>;
+
+export { ButtonCss, MyButton };
