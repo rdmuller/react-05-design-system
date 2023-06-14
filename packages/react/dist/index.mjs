@@ -1,27 +1,11 @@
 // src/styles/MyButton.css.ts
-var myButton = "MyButton_myButton__1y0yztd0";
-
-// src/ButtonCss.tsx
-import { jsx } from "react/jsx-runtime";
-function ButtonCss({ children }) {
-  const buttonStyle = {
-    borderRadius: "8px",
-    padding: "2rem",
-    backgroundColor: "blue",
-    color: "white",
-    border: 0
-  };
-  return /* @__PURE__ */ jsx("button", { style: buttonStyle, children });
-}
+var myButton = "sprinkles_fontFamily_default__qzbbz14z sprinkles_backgroundColor_ignite300__qzbbz19q sprinkles_borderRadius_md__qzbbz158 sprinkles_padding_8__qzbbz15i sprinkles_color_white__qzbbz192 sprinkles_fontSize_xs__qzbbz14k";
 
 // src/index.tsx
-import { jsx as jsx2 } from "react/jsx-runtime";
-var MyButton = ({
-  children
-}) => {
-  return /* @__PURE__ */ jsx2("button", { className: myButton, children });
+import { jsx } from "react/jsx-runtime";
+var MyButton = ({ children }) => {
+  return /* @__PURE__ */ jsx("button", { className: myButton, children });
 };
 export {
-  ButtonCss,
   MyButton
 };

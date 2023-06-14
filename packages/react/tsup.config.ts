@@ -3,5 +3,4 @@ import { defineConfig } from "tsup";
 
 export default defineConfig({
 	esbuildPlugins: [vanillaExtractPlugin()],
-	bundle: true
 });

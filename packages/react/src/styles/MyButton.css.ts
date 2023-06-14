@@ -1,11 +1,12 @@
-import { style } from "@vanilla-extract/css";
-import { vars } from "./index.css";
+//import { style } from "@vanilla-extract/css";
+//import { vars } from "./index.css";
+import { sprinkles } from "./sprinkles.css";
 
-export const myButton = style({
-	fontFamily: vars.fonts.default,
-	backgroundColor: vars.colors.gray900,
-	borderRadius: vars.radii.md,
-	padding: vars.space[4],
-	color: "blue",
-	fontSize: "5rem",
+export const myButton = sprinkles({
+	fontFamily: "default",
+	backgroundColor: "ignite300",
+	borderRadius: "md",
+	padding: 8,
+	color: "white",
+	fontSize: "xs",
 });

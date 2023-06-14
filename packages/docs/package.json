@@ -12,7 +12,6 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@ignite-ui/eslint-config": "*",
     "@ignite-ui/react": "*",
     "@ignite-ui/tokens": "*",
     "@vanilla-extract/vite-plugin": "^3.8.2",
@@ -20,6 +19,7 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@ignite-ui/eslint-config": "*",
     "@storybook/addon-essentials": "^7.0.18",
     "@storybook/addon-interactions": "^7.0.18",
     "@storybook/addon-links": "^7.0.18",
