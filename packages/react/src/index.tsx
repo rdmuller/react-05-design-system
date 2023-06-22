@@ -1,4 +1,7 @@
-import React from "react";
+export * from "./components/Box";
+export * from "./components/Text";
+
+/*import React from "react";
 import * as styles from "./styles/MyButton.css";
 
 interface ButtonProps {
@@ -11,4 +14,5 @@ const MyButton: React.FC<ButtonProps> = ({ children }) => {
 	);
 };
 
-export { MyButton };
+export { MyButton };*/
+

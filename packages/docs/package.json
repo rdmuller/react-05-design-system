@@ -15,11 +15,14 @@
     "@ignite-ui/react": "*",
     "@ignite-ui/tokens": "*",
     "@vanilla-extract/vite-plugin": "^3.8.2",
+    "polished": "^4.2.2",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "storybook-dark-mode": "^3.0.0"
   },
   "devDependencies": {
     "@ignite-ui/eslint-config": "*",
+    "@ignite-ui/ts-config": "*",
     "@storybook/addon-essentials": "^7.0.18",
     "@storybook/addon-interactions": "^7.0.18",
     "@storybook/addon-links": "^7.0.18",

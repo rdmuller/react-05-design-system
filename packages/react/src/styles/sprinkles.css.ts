@@ -27,6 +27,7 @@ const unconditionalProperties = defineProperties({
 		fontFamily: fonts,
 		lineHeight: lineHeights,
 		borderRadius: radii,
+		borderStyle: ["none", "solid"],
 		padding: space,
 		paddingTop: space,
 		paddingBottom: space,
@@ -42,7 +43,8 @@ const unconditionalProperties = defineProperties({
 const colorProperties = defineProperties({
 	properties: {
 		color: colors,
-		backgroundColor: colors
+		backgroundColor: colors,
+		borderColor: colors,
 	}
 });
   
