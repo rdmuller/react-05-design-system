@@ -1,5 +1,7 @@
 export * from "./components/Box";
 export * from "./components/Text";
+export * from "./components/Heading";
+export * from "./components/Avatar";
 
 /*import React from "react";
 import * as styles from "./styles/MyButton.css";

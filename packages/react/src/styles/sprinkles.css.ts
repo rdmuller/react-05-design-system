@@ -1,6 +1,8 @@
 import { colors, fontSizes, fontWeights, fonts, lineHeights, radii, space } from "@ignite-ui/tokens";
 import { createSprinkles, defineProperties } from "@vanilla-extract/sprinkles";
 
+export const spaces = space;
+
 const responsiveProperties = defineProperties({
 	properties: {
 		fontSize: fontSizes,
@@ -37,6 +39,8 @@ const unconditionalProperties = defineProperties({
 		marginBottom: space,
 		marginLeft: space,
 		marginRight: space,
+		width: space,
+		height: space,
 	}
 });
 

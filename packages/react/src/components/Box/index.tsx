@@ -1,5 +1,5 @@
 import React, { ComponentProps, ReactNode } from "react";
-import { boxStyle } from "./Box.css";
+import { boxStyle } from "./styles.css";
 
 export interface BoxProps extends ComponentProps<"div"> {
     children?: ReactNode

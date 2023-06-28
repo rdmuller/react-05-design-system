@@ -24,7 +24,7 @@ module.exports = {
     builder: "@storybook/builder-vite"
   },
   docs: {
-    autodocs: "tag",
+    autodocs: true,
   },
 
   viteFinal: async (config, { configType }) => {
