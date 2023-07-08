@@ -68,10 +68,9 @@ export const buttonStyles = recipe({
 					borderColor: "ignite500",
 					borderStyle: "solid",
 					backgroundColor: "transparent",
+					borderWidth: "2px",
 				}),
 				{
-					borderWidth: "2px",
-
 					selectors: {
 						"&:not(:disabled):hover": {
 							backgroundColor: colors.ignite500,

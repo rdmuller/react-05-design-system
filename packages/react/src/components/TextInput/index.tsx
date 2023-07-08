@@ -1,13 +1,15 @@
-import { ReactNode } from "react";
+import { ComponentProps } from "react";
+import { inputStyle, prefixStyle, textInputStyle } from "./styles.css";
 
-export interface TextInputProps {
-    children?: ReactNode
+export interface TextInputProps extends ComponentProps<"input"> {
+    prefix?: string
 }
 
-export function TextInput() {
+export function TextInput({ prefix, ...props }:TextInputProps) {
 	return (
-		<div>
-        
+		<div className={textInputStyle}>
+			{!!prefix && <span className={prefixStyle}>{prefix}</span>}
+			<input className={inputStyle} {...props} />
 		</div>
 	);
 }
