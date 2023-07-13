@@ -2,7 +2,7 @@ import { style } from "@vanilla-extract/css";
 import { sprinkles } from "../../styles/sprinkles.css";
 import { colors } from "@ignite-ui/tokens";
 
-export const textInputStyle = style([
+export const textInputContainerStyle = style([
 	sprinkles({
 		backgroundColor: "gray900",
 		paddingBottom: 3,
@@ -27,7 +27,7 @@ export const textInputStyle = style([
 				cursor: "not-allowed"
 			}
 		}
-	}    
+	}
 ]);
 
 export const prefixStyle = sprinkles({

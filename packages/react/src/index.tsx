@@ -4,6 +4,8 @@ export * from "./components/Heading";
 export * from "./components/Avatar";
 export * from "./components/Button";
 export * from "./components/TextInput";
+export * from "./components/TextArea";
+export * from "./components/Checkbox";
 
 /*import React from "react";
 import * as styles from "./styles/MyButton.css";
