@@ -1,10 +1,14 @@
-import { style } from "@vanilla-extract/css";
+import { createVar, style } from "@vanilla-extract/css";
 import { sprinkles } from "../../styles/sprinkles.css";
 import { textStyles } from "../Text/styles.css";
+import { RecipeVariants, recipe } from "@vanilla-extract/recipes";
+import { colors } from "@ignite-ui/tokens";
 
 export const multiStepContainerStyle = style([
     
 ]);
+
+export const stepsSize = createVar();
 
 export const textMultiStepStyle = style([
 	textStyles({
@@ -22,6 +26,24 @@ export const stpesStyles = style([
 	}),
 	{
 		display: "grid",
-		gridTemplateColumns: "repeat(4, 1fr)",
+		gridTemplateColumns: `repeat(${stepsSize}, 1fr)`
 	}
 ]);
+
+export const stepStyles = recipe({
+	base: sprinkles({
+		height: 1,
+		borderRadius: "px",
+		backgroundColor: "gray600"
+	}),
+	variants: {
+		active: {
+			true: {
+				backgroundColor: colors.gray100
+				//sprinkles({ backgroundColor: "gray100" })
+			}
+		}
+	}
+});
+
+export type StepStylesVariants = RecipeVariants<typeof stepStyles>;
