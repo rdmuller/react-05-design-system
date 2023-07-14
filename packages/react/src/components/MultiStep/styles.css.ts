@@ -14,3 +14,14 @@ export const textMultiStepStyle = style([
 		color: "gray200",
 	}),
 ]); 
+
+export const stpesStyles = style([
+	sprinkles({
+		gap: 2,
+		marginTop: 1,
+	}),
+	{
+		display: "grid",
+		gridTemplateColumns: "repeat(4, 1fr)",
+	}
+]);

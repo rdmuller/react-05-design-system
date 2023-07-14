@@ -7,7 +7,10 @@ import { StoryObj, Meta } from "@storybook/react";
 export default {
 	title: "Form/Multi step",
 	component: MultiStep,
-	args: {},
+	args: {
+		currentStep: 1,
+		size: 4
+	},
 	decorators: [
 		(Story) => {
 			return (
