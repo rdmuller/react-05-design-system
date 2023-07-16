@@ -13,3 +13,5 @@ export const Box: React.FC<BoxProps> = ({children, as: Component = "div", ...pro
 		</Component>
 	);
 };
+
+Box.displayName = "Box";
