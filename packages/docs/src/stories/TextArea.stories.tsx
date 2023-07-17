@@ -7,7 +7,14 @@ import { StoryObj, Meta } from "@storybook/react";
 export default {
 	title: "Form/Text area",
 	component: TextArea,
-	args: {},
+	args: { 
+		disabled: false,
+	},
+	argTypes: {
+		disabled: {
+			control: { type: "boolean" }
+		}
+	},
 	decorators: [
 		(Story) => {
 			return (

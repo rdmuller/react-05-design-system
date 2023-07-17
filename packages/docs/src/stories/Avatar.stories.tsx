@@ -9,6 +9,13 @@ export default {
 	args: {
 		src: "https://avatars.githubusercontent.com/u/46840910?v=4",
 		alt: "Ronald D. Müller"
+	},
+	argTypes: {
+		src: {
+			controls: {
+				type: "text"
+			}
+		}
 	}
 } as Meta<AvatarProps>;
 
