@@ -9,6 +9,9 @@ export default {
 	component: Button,
 	args: {
 		children: "Send",
+		variant: "primary",
+		size: "md",
+		disabled: true
 	},
 	argTypes: {
 		variant: {
@@ -22,6 +25,11 @@ export default {
 			control: {
 				type: "inline-radio"
 			},
+		},
+		disabled: {
+			control: {
+				type: "boolean"
+			}
 		},
 
 		onClick: {

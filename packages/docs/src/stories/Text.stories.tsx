@@ -8,6 +8,15 @@ export default {
 	component: Text,
 	args: {
 		children: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ut alias culpa quam facere obcaecati dolorem rem fugiat atque earum aperiam repellat libero modi maiores maxime itaque, architecto laborum eum?",
+		size: "md",
+	},
+	argTypes: {
+		size: {
+			options: ["xxs", "xs", "sm", "md", "lg", "xl", "2xl", "4xl", "5xl", "6xl", "7xl", "8xl", "9xl"],
+			control: {
+				type: "inline-radio"
+			}
+		}
 	}
 } as Meta<TextProps>;
 
