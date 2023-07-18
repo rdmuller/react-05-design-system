@@ -24,11 +24,18 @@ module.exports = {
   core: {
     builder: "@storybook/builder-vite"
   },
+  features: {
+    storyStoreV7: true
+  },
   docs: {
     autodocs: true,
   },
 
   viteFinal: async (config, { configType }) => {
+    if (configType === "PRODUCTION") {
+      config.base = "/react-05-design-system/"
+    }
+
     return mergeConfig(config, {
       ...config,
       plugins: [require("@vanilla-extract/vite-plugin").vanillaExtractPlugin()],
