@@ -1,4 +1,4 @@
-import { colors } from "@ignite-ui/tokens";
+import { colors } from "@rdmuller-ignite-ui/tokens";
 import { sprinkles } from "../../styles/sprinkles.css";
 import { style } from "@vanilla-extract/css";
 

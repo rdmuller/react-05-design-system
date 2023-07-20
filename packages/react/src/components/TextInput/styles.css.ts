@@ -1,6 +1,6 @@
 import { style } from "@vanilla-extract/css";
 import { sprinkles } from "../../styles/sprinkles.css";
-import { colors } from "@ignite-ui/tokens";
+import { colors } from "@rdmuller-ignite-ui/tokens";
 
 export const textInputContainerStyle = style([
 	sprinkles({

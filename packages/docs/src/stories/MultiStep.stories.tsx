@@ -1,7 +1,7 @@
-import "@ignite-ui/css";
+import "@rdmuller-ignite-ui/css";
 
-import { Box, Text, MultiStep, MultiStepProps } from "@ignite-ui/react";
-import { space } from "@ignite-ui/tokens";
+import { Box, Text, MultiStep, MultiStepProps } from "@rdmuller-ignite-ui/react";
+import { space } from "@rdmuller-ignite-ui/tokens";
 import { StoryObj, Meta } from "@storybook/react";
 
 export default {

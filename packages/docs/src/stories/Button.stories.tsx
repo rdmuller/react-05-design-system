@@ -1,6 +1,6 @@
-import "@ignite-ui/css";
+import "@rdmuller-ignite-ui/css";
 
-import { Button, ButtonProps } from "@ignite-ui/react";
+import { Button, ButtonProps } from "@rdmuller-ignite-ui/react";
 import { StoryObj, Meta } from "@storybook/react";
 import { ArrowRight } from "phosphor-react";
 

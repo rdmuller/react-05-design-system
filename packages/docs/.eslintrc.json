@@ -1,3 +1,6 @@
 {
-    "extends": "@ignite-ui/eslint-config/lint.json"
+    "extends": [
+        "@rdmuller-ignite-ui/eslint-config/lint.json",
+        "plugin:storybook/recommended"
+    ]
 }

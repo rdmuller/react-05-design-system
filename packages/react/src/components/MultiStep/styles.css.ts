@@ -2,7 +2,7 @@ import { createVar, style } from "@vanilla-extract/css";
 import { sprinkles } from "../../styles/sprinkles.css";
 import { textStyles } from "../Text/styles.css";
 import { recipe } from "@vanilla-extract/recipes";
-import { colors } from "@ignite-ui/tokens";
+import { colors } from "@rdmuller-ignite-ui/tokens";
 
 export const multiStepContainerStyle = style([
     

@@ -1,6 +1,6 @@
-import "@ignite-ui/css";
+import "@rdmuller-ignite-ui/css";
 
-import { Heading, HeadingProps } from "@ignite-ui/react";
+import { Heading, HeadingProps } from "@rdmuller-ignite-ui/react";
 import { StoryObj, Meta } from "@storybook/react";
 
 export default {

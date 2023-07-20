@@ -1,7 +1,7 @@
 import { RecipeVariants, recipe } from "@vanilla-extract/recipes";
 import { globalStyle, style } from "@vanilla-extract/css";
 import { sprinkles } from "../../styles/sprinkles.css";
-import { colors, space } from "@ignite-ui/tokens";
+import { colors, space } from "@rdmuller-ignite-ui/tokens";
 
 const baseButtonStyle = style([
 	sprinkles({

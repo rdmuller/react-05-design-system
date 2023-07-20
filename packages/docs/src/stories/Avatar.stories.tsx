@@ -1,6 +1,6 @@
-import "@ignite-ui/css";
+import "@rdmuller-ignite-ui/css";
 
-import { Avatar, AvatarProps } from "@ignite-ui/react";
+import { Avatar, AvatarProps } from "@rdmuller-ignite-ui/react";
 import { StoryObj, Meta } from "@storybook/react";
 
 export default {

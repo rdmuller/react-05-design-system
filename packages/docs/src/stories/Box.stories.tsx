@@ -1,6 +1,6 @@
-import "@ignite-ui/css";
+import "@rdmuller-ignite-ui/css";
 
-import { Box, BoxProps, Text } from "@ignite-ui/react";
+import { Box, BoxProps, Text } from "@rdmuller-ignite-ui/react";
 import { StoryObj, Meta } from "@storybook/react";
 
 export default {

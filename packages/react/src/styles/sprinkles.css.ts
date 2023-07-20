@@ -1,4 +1,4 @@
-import { colors, fontSizes, fontWeights, fonts, lineHeights, radii, space } from "@ignite-ui/tokens";
+import { colors, fontSizes, fontWeights, fonts, lineHeights, radii, space } from "@rdmuller-ignite-ui/tokens";
 import { createSprinkles, defineProperties } from "@vanilla-extract/sprinkles";
 
 export const spaces = space;
