@@ -1,5 +1,11 @@
 # @rdmuller-ignite-ui/react
 
+## 3.0.1
+
+### Patch Changes
+
+- New fix and fetures
+
 ## 3.0.0
 
 ### Major Changes

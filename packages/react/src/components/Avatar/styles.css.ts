@@ -4,8 +4,8 @@ import { spaces, sprinkles } from "../../styles/sprinkles.css";
 export const avatarContainer = style([
 	sprinkles({
 		borderRadius: "full",        
-		width: 12,
-		height: 12,
+		width: 16,
+		height: 16,
 	}),
 	{
 		display: "inline-block",

@@ -30,7 +30,10 @@ const baseButtonStyle = style([
 		selectors: {
 			"&:disabled": {
 				cursor: "not-allowed",
-			}
+			},
+			"&:focus": {
+				boxShadow: `0 0 0 2px ${colors.gray100}`
+			},
 		}
 	},
 ]);
@@ -40,8 +43,8 @@ export const buttonStyles = recipe({
 
 	variants: {
 		size: {
-			sm: { height: "38px" },
-			md: { height: "46px" },
+			sm: style({ height: "38px" }),
+			md: style({ height: "46px" }),
 		},
 
 		variant: {
@@ -103,18 +106,9 @@ export const buttonStyles = recipe({
 		},
 	},
 
-	/*compoundVariants: [
-		{
-			variants: {
-				size: "md",
-				variant: "primary",
-			},
-		},
-	],*/
-
 	defaultVariants: {
 		variant: "primary",
-		size: "md"
+		size: "md",
 	},
 });
 

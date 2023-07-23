@@ -13,6 +13,15 @@ export default {
 	argTypes: {
 		disabled: {
 			control: { type: "boolean" }
+		},
+		size: {
+			options: ["sm", "md"],
+			control: {
+				type: "inline-radio"
+			}
+		},
+		prefix: {
+			control: { type: "text" }
 		}
 	},
 	decorators: [
@@ -29,7 +38,7 @@ export default {
 
 export const Primary: StoryObj<TextInputProps> = {
 	args: {
-		placeholder: "Type your name"
+		placeholder: "Type your name",
 	}
 };
 
@@ -41,6 +50,7 @@ export const Disabled: StoryObj<TextInputProps> = {
 
 export const WithPrefix: StoryObj<TextInputProps> = {
 	args: {
-		prefix: "call.com/"
+		prefix: "call.com/",
+		placeholder: "your-username"
 	}
 };

@@ -7,18 +7,4 @@ export * from "./components/TextInput";
 export * from "./components/TextArea";
 export * from "./components/Checkbox";
 export * from "./components/MultiStep";
-
-/*import React from "react";
-import * as styles from "./styles/MyButton.css";
-
-interface ButtonProps {
-	children?: React.ReactNode
-}
-
-const MyButton: React.FC<ButtonProps> = ({ children }) => {
-	return (
-		<button className={styles.myButton}>{children}</button>
-	);
-};
-
-export { MyButton };*/
+export * from "./styles/sprinkles.css";

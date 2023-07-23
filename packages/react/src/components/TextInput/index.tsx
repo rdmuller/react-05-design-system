@@ -1,15 +1,20 @@
-import { ComponentProps } from "react";
-import { inputStyle, prefixStyle, textInputContainerStyle } from "./styles.css";
+import { ComponentProps, ElementRef, forwardRef } from "react";
+import { inputStyle, prefixStyle, textInputContainerStyle, TextInputVariants } from "./styles.css";
 
-export interface TextInputProps extends ComponentProps<"input"> {
+export type TextInputProps = ComponentProps<"input"> & TextInputVariants & {
     prefix?: string
 }
 
-export function TextInput({ prefix, ...props }:TextInputProps) {
-	return (
-		<div className={textInputContainerStyle}>
-			{!!prefix && <span className={prefixStyle}>{prefix}</span>}
-			<input className={inputStyle} {...props} />
-		</div>
-	);
-}
+export const TextInput = forwardRef<ElementRef<"input">, TextInputProps>(
+	({ prefix, size, ...props }:TextInputProps, ref) => {
+		const textContainerCss = textInputContainerStyle({ size });
+
+		return (
+			<div className={textContainerCss}>
+				{!!prefix && <span className={prefixStyle}>{prefix}</span>}
+				<input ref={ref} className={inputStyle} {...props} />
+			</div>
+		);
+	});
+
+TextInput.displayName = "TextInput";

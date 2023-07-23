@@ -5,7 +5,7 @@ export const boxStyle = style([
 	sprinkles({
 		backgroundColor: "gray800",
 		borderRadius: "md",
-		padding: 4,
+		padding: 6,
 		borderColor: "gray600",
 		borderStyle: "solid",
 	}),

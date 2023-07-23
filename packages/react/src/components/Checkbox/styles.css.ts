@@ -40,13 +40,13 @@ export const checkboxContainerStyles = style([
 		alignItems: "center",
 		justifyContent: "center",
 
-		":focus": {
-			borderColor: colors.ignite300,
-		},
 		selectors: {
 			"&[data-state=\"checked\"]": {
 				backgroundColor: colors.ignite300
-			}
+			},
+			"&:focus, &[data-state=\"checked\"]": {
+				borderColor: colors.ignite300,
+			},
 		}
 	}
 ]);

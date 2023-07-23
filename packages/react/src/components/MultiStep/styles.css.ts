@@ -4,9 +4,7 @@ import { textStyles } from "../Text/styles.css";
 import { recipe } from "@vanilla-extract/recipes";
 import { colors } from "@rdmuller-ignite-ui/tokens";
 
-export const multiStepContainerStyle = style([
-    
-]);
+export const multiStepContainerStyle = style({});
 
 export const stepsSize = createVar();
 

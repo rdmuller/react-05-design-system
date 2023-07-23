@@ -6,8 +6,8 @@ export type ButtonProps = ComponentProps<"button"> & ButtonVariants & {
 }
 
 //export function Button({children, variant, as: Component = "button", ...props}: ButtonProps) {
-export const Button: React.FC<ButtonProps> = ({children, variant, as: Component = "button", ...props}: ButtonProps) => {
-	const variantClass = buttonStyles({ variant });
+export const Button: React.FC<ButtonProps> = ({children, variant, size, as: Component = "button", ...props}: ButtonProps) => {
+	const variantClass = buttonStyles({ variant, size });
 
 	return (
 		<Component className={variantClass} {...props}>
