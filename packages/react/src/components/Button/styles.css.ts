@@ -80,7 +80,7 @@ export const buttonStyles = recipe({
 							color: colors.white,
 						},
 						"&:disabled": {
-							backgroundColor: colors.gray200,
+							backgroundColor: colors.gray100,
 							color: colors.gray200,
 						}
 					}
