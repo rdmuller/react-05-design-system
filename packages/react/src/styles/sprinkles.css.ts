@@ -42,6 +42,10 @@ const unconditionalProperties = defineProperties({
 		marginRight: space,
 		width: space,
 		height: space,
+		right: space,
+		top: space,
+		bottom: space,
+		left: space,
 		gap: space,
 	}
 });

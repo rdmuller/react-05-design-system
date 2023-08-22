@@ -1,31 +1,32 @@
 import { ReactNode, createContext, useCallback, useContext, useState } from "react";
-import { Toast, RadixToast, RadixToastProvider, RadixToastViewport } from "./index";
+import { Toast, ToastProps, RadixToastProvider, RadixToastViewport } from "./index";
+import * as styles from "./styles.css";
 
-type ToastContextProps = (toast: Toast) => void;
+type ToastContextProps = (toast: ToastProps) => void;
 
 export const ToastContext = createContext({} as ToastContextProps);
 
 export function ToastProvider({ children }: {children: ReactNode}) {
-	const [toasts, setToasts] = useState<Toast[]>([]);
+	const [toasts, setToasts] = useState<ToastProps[]>([]);
 
-	const addToast = useCallback(({ title, description, duration, status }: Omit<Toast, "id">) => {
+	const addToast = useCallback(({ title, description, duration, status }: Omit<ToastProps, "id">) => {
 		const toast = {
 			id: Math.random().toString(36).slice(2),
 			title,
 			description,
 			duration, 
 			status
-		} as Toast;
+		} as ToastProps;
 		setToasts((currentToasts) => [...currentToasts, toast]);
 	}, []);
 
 	return (
 		<ToastContext.Provider value={addToast}>
 			<RadixToastProvider>
-				<RadixToastViewport />
+				<RadixToastViewport className={styles.toastViewport} />
 				{toasts.map(toast => {
 					return (
-						<RadixToast key={toast.id}
+						<Toast key={toast.id}
 							onOpenChange={(open) => {
 								if (!open) {
 									setToasts((currentToasts) => currentToasts.filter((t) => t.id !== toast.id));
