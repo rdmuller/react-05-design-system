@@ -4,19 +4,21 @@ import { sprinkles } from "../../styles/sprinkles.css";
 
 const slideIn = keyframes({
 	"from": {
-		transform: "translateY(150%)"
+		//transform: "translateX(100%)"
+		width: 0,
 	},
 	"to": {
-		transform: "translateY(0)"
+		width: "22.5rem",
+		//transform: "translateX(0)"
 	}
 });
 
 const slideOut = keyframes({
 	"from": {
-		transform: "translateY(0)"
-	},
+		transform: "translateX(0)"
+},
 	"to": {
-		transform: "translateY(150%)"
+		transform: "translateX(100%)"
 	}
 });
 
