@@ -42,3 +42,15 @@ export default {
 } as Meta<ToastProps>;
 
 export const Primary: StoryObj<ToastProps> = {};
+
+export const Success: StoryObj<ToastProps> = {
+	args: {
+		status: "success"
+	}
+};
+
+export const Error: StoryObj<ToastProps> = {
+	args: {
+		status: "error"
+	}
+};

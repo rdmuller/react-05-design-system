@@ -4,19 +4,17 @@ import { sprinkles } from "../../styles/sprinkles.css";
 
 const slideIn = keyframes({
 	"from": {
-		//transform: "translateX(100%)"
-		width: 0,
+		transform: "translateX(100%)"
 	},
 	"to": {
-		width: "22.5rem",
-		//transform: "translateX(0)"
+		transform: "translateX(0)"
 	}
 });
 
 const slideOut = keyframes({
 	"from": {
 		transform: "translateX(0)"
-},
+	},
 	"to": {
 		transform: "translateX(100%)"
 	}
@@ -37,18 +35,18 @@ export const toastViewport = style([
 		zIndex: 999999999,
 		listStyle: "none",
 		outline: "none",
-		width: "fit-content",
+		overflow: "hidden",
 	}
 ]);
 
-export const toastContainer = style([
+const baseToastContainer = style([
 	sprinkles({
-		backgroundColor: "gray800",
+		//backgroundColor: "gray800",
+		//borderColor: "gray600",
 		paddingTop: 3,
 		paddingBottom: 3,
 		paddingLeft: 5,
 		paddingRight: 5,
-		borderColor: "gray600",
 		gap: 1,
 	}),
 	{
@@ -72,6 +70,34 @@ export const toastContainer = style([
 		}
 	}
 ]);
+
+export const toastContainer = recipe({
+	base: baseToastContainer,
+	variants: {
+		status: {
+			error: sprinkles({
+				backgroundColor: "red900",
+				borderColor: "red500",
+			}),
+		
+			success: sprinkles({
+				backgroundColor: "ignite700",
+				borderColor: "ignite500",
+			}),
+
+			info: sprinkles({
+				backgroundColor: "gray800",
+				borderColor: "gray600",
+			}),
+		}
+	},
+
+	defaultVariants: {
+		status: "info"
+	}
+});
+
+export type ToastVariants = RecipeVariants<typeof toastContainer>;
 
 export const toastTitle = sprinkles({
 	color: "white",

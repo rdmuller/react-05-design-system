@@ -1,5 +1,11 @@
 # @rdmuller-ignite-ui/tokens
 
+## 3.0.0
+
+### Major Changes
+
+- New toast component
+
 ## 2.1.0
 
 ### Minor Changes

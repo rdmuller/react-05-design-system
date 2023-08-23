@@ -1,5 +1,11 @@
 # @rdmuller-ignite-ui/react
 
+## 4.0.0
+
+### Major Changes
+
+- New toast component
+
 ## 3.0.1
 
 ### Patch Changes
