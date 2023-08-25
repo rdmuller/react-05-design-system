@@ -1,5 +1,11 @@
 # @rdmuller-ignite-ui/react
 
+## 5.0.0
+
+### Major Changes
+
+- New exports
+
 ## 4.0.0
 
 ### Major Changes
