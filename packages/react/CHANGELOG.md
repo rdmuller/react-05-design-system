@@ -1,5 +1,11 @@
 # @rdmuller-ignite-ui/react
 
+## 6.0.0
+
+### Major Changes
+
+- New vanilla-extract lib version
+
 ## 5.0.0
 
 ### Major Changes
